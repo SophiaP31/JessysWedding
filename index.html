@@ -7,64 +7,87 @@
     <link href="style.css" rel="stylesheet" type="text/css" >
     <link href="https://fonts.googleapis.com/css?family=Roboto"
     rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="script.js" ></script>
-    <meta property="og:image" content="dip.jpg">
-  </head>
-  <body id="bodyhome" >
+    <meta property="og:image" content="./photos/dip.jpg">
 
     <style>
 
-    #bodyhome {
+    body {
                background: url('./photos/dip.jpg') no-repeat center center fixed;
                -webkit-background-size: cover;
                -moz-background-size: cover;
                -o-background-size: cover;
+
+
            }
+
+
+     p {
+       text-align: center;
+       font-size: 400%;;
+       /* margin-top: 0px; */
+       font-family:starCity;
+       color: white;
+       /* margin-bottom: 10%; */
+       /* position: absolute; */
+     }
+     .container{
+       position: relative;
+       height: 100%;
+     }
+     .footer{
+       position: absolute;
+        bottom: 0;
+     }
+
+
     </style>
 
 
-
-    <ul class="navigationBar">
-  <li><a class="active" href="index.html">Home</a></li>
-  <li><a href="Transportation.html">Transportation & Accomodations</a></li>
-  <li><a href="Details.html">Wedding Details</a></li>
-  <li><a href="Registry.html">Registry</a></li>
-  <li><a href="Meet.html">Meet the Wedding Party</a></li>
-  <li><a href="Story.html">Our Story</a></li>
-    </ul>
+  </head>
 
 
- <h1 style = "margin-top: 70px;"> SettlesDownWithPastino </h1>
+  <body >
 
-    <div>
+
+
+    <div class="topnav" id="myTopnav">
+      <a href="index.html" class="active">Home</a>
+      <a href="Details.html">Wedding Details</a>
+      <a href="Transportation.html">Transportation</a>
+      <a href="Registry.html">Registry</a>
+      <a href="Meet.html">Meet the Wedding Party</a>
+      <a href="Story.html">Our Story</a>
+      <a href="Gallery.html">Photo Gallery</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <div id = "container">
+ <h1 style = "margin-top: 5%; color:white; font-family: fridayVibes;"> SettlesDownWithPastino </h1>
+
+    <div id="footer">
 
 
       <p id="countdown" > </p>
 
-      <p >until the big day!</p>
+      <p >
+        until the big day!
+      </p>
 
 
     </div>
 
 
- <style>
-  p {
-    text-align: center;
-    font-size: 60px;
-    margin-top: 0px;
-    font-family:starCity;
-    text-align: center;
-    color: white;
-
-  }
-      </style>
 
 
 
 
 
 
-
+<div>
 
   </body>
 </html>

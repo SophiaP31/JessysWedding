@@ -7,39 +7,50 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   </head>
+  <style>
+  body{
+    font-family: Arial;
+    text-align: center;
+    background-color: #6A2E35;
+  }
+  </style>
   <body>
-    
-    <h1 style = "margin-top: 70px;"> Wedding Details </h1>
-    
-    <ul class="navigationBar">
-      <li><a  href="index.html">Home</a></li>
-      <li><a href="Transportation.html">Transportation & Accomodations</a></li>
-      <li><a class="active" href="Details.html">Wedding Details</a></li>
-      <li><a href="Registry.html">Registry</a></li>
-      <li><a href="Meet.html">Meet the Wedding Party</a></li>
-      <li><a href="Story.html">Our Story</a></li>
-    </ul>
-    
+
+
+    <div class="topnav" id="myTopnav">
+      <a href="index.html" >Home</a>
+      <a href="Details.html" class="active">Wedding Details</a>
+      <a href="Transportation.html">Transportation</a>
+      <a href="Registry.html">Registry</a>
+      <a href="Meet.html">Meet the Wedding Party</a>
+      <a href="Story.html">Our Story</a>
+      <a href="Gallery.html">Photo Gallery</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
     <div id="details">
       <style="display:flex">
+<h1> Wedding Details </h1>
+      <div id="location" style=" color:white; width:100%; height:100%;">
+        <h2>Locations/directions</h2>
+The wedding will be held at Elk Creek Baptist Church (5916 Kentucky Springs Road Mineral, VA 23117)
+<h2>Unplugged ceremony</h2>
+<h3>~ no phones/photography during ceremony ~ <h3>
+The Reception will be at Bandits Ridge (5061 Broad Street Louisa VA 23093)
+<h2>Timeline</h2>
+Wedding ceremony: begins at 2pm
+<br>
+Wedding Reception: begins at 4pm
 
-      <div id="location" style="background-color:#6A2E35; color:white; width:30%; height:30%;">
-          location:
         </div>
 
-        <div id="unplugged" style="background-color:#330F0A; color:white; width:30%; height:30%;">
-          Unplugged Ceremony:
-        </div>
 
-        <div id="Timeline" style="background-color:#6A2E35; color:white; width:30%; height:30%;">
-          Timeline:
-        </div>
 
-  
       </div>
 
 
-  
 
 
 
@@ -53,6 +64,7 @@
 
 
 
-    
+
+
   </body>
 </html>
