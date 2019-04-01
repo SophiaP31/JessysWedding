@@ -35,6 +35,24 @@
   font-family: Sweety;
   src: url("./fonts/SweetyScript.ttf");
 }
+@font-face {
+  font-family: Sunday;
+  src: url("./fonts/Sunday-Regular.ttf");
+}
+@font-face {
+  font-family: CarolinaM;
+  src: url("./fonts/CarolinaM.ttf");
+}
+@font-face {
+  font-family: LoveMe;
+  src: url("./fonts/KGDoYouLoveMe.ttf");
+}
+@font-face {
+  font-family: Champ;
+  src: url("./fonts/Champagne.ttf");
+}
+
+
 
 /*~~~~~~~~~~Every Page~~~~~~~~~~*/
 html{
@@ -44,13 +62,20 @@ html{
 body{
   width: 100%;
   margin: 0;
-  font-family: Roboto;
+  font-family: Champ;
+  font-size: 17px;
+
 }
 
-/* ~~~~~~~~~~~~~~TITLE ~~~~~~~~~~~~*/
 
 h1{text-align: center;
-font-family: fridayVibes;}
+font-family: CarolinaM;
+font-size: 450%;
+}
+
+h2{
+  font-family: Sunday;
+}
 
 
 /* ~~~~~~~~~~~~~Navigation Bar~~~~~~~~~ */
@@ -58,6 +83,16 @@ font-family: fridayVibes;}
 .topnav {
   overflow: hidden;
   background-color: #01172F;
+  color: white;
+  /* background-color:rgb(255, 255, 255,0.4); */
+  font-family: Sunday;
+  font-size: 300px;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: auto;
+
 }
 
 .topnav a {
@@ -68,6 +103,8 @@ font-family: fridayVibes;}
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  position: sticky;
+
 }
 
 .topnav a:hover {
@@ -76,28 +113,43 @@ font-family: fridayVibes;}
 }
 
 .active {
-  background-color: #6A2E35; ;
-  color: white;
+  /* background-color: #6A2E35; ;
+  color: white; */
 }
+
 
 .topnav .icon {
   display: none;
 }
 
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
+@media screen and (max-width: 1200px) {
+  /* .topnav a:not(:first-child) {display: none;} */
+  .topnav a {display: none;}
   .topnav a.icon {
     float: right;
     display: block;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+  }
+  .topnav {
+    background-color: none;
+    position: sticky;
+  }
+  h1{
+    font-size: 200%;
   }
 }
 
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
+@media screen and (max-width: 1200px) {
+  .topnav.responsive {position: sticky;}
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
     top: 0;
+    display: block;
+
+
   }
   .topnav.responsive a {
     float: none;

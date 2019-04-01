@@ -6,10 +6,16 @@
     <title>Jessy & Matt</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <script src="script.js" ></script>
     <style>
 body {
   font-family: Arial;
   margin: 0;
+  /* background: rgba(106, 46, 53); */
+}
+h1{
+  font-size: 450%;
 }
 
 * {
@@ -18,6 +24,7 @@ body {
 
 img {
   vertical-align: middle;
+
 }
 
 /* Position the image container (needed to position the left and right arrows) */
@@ -28,6 +35,7 @@ img {
 /* Hide the images by default */
 .mySlides {
   display: none;
+  text-align: center;
 }
 
 /* Add a pointer when hovering over the thumbnail images */
@@ -44,7 +52,7 @@ img {
   width: auto;
   padding: 16px;
   margin-top: -50px;
-  color: white;
+  color: black;
   font-weight: bold;
   font-size: 20px;
   border-radius: 0 3px 3px 0;
@@ -61,7 +69,7 @@ img {
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 /* Number text (1/3 etc) */
@@ -71,6 +79,7 @@ img {
   padding: 8px 12px;
   position: absolute;
   top: 0;
+  display: none;
 }
 
 /* Container for image text */
@@ -80,17 +89,22 @@ img {
   padding: 2px 16px;
   color: white;
 }
-
+#caption{
+  color: white;
+}
 .row:after {
   content: "";
   display: table;
   clear: both;
+
 }
+
+
 
 /* Six columns side by side */
 .column {
   float: left;
-  width: 16.66%;
+  width: 3.33%;
 }
 
 /* Add a transparency effect for thumnbail images */
@@ -101,6 +115,11 @@ img {
 .active,
 .demo:hover {
   opacity: 1;
+}
+
+.caption-container{
+  background-color: #01172F;
+  color: white;
 }
 </style>
   </head>
@@ -116,6 +135,7 @@ img {
       <a href="Meet.html">Meet the Wedding Party</a>
       <a href="Story.html">Our Story</a>
       <a href="Gallery.html" class="active">Photo Gallery</a>
+      <a href="Sophia.html"> About This Page </a>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
       </a>
@@ -151,15 +171,116 @@ img {
       </div>
 
       <div class="mySlides">
-        <div class="numbertext">6 / 6</div>
-        <img src="./photos/merica.jpg" style="height: 400px;">
+        <div class="numbertext">6/28</div>
+        <img src="./photos/gal6.jpg" style="height: 400px;">
       </div>
+
+
+<div class="mySlides">
+        <div class="numbertext">7 / 35</div>
+        <img src="./photos/gal7.JPG" style="height: 400px;">
+      </div>
+
+<div class="mySlides">
+        <div class="numbertext">8 / 35</div>
+        <img src="./photos/gal8.JPG" style="height: 400px;">
+      </div>
+
+<div class="mySlides">
+        <div class="numbertext">9 / 35</div>
+        <img src="./photos/gal9.JPG" style="height: 400px;">
+      </div>
+<div class="mySlides">
+        <div class="numbertext">10 / 35</div>
+        <img src="./photos/gal10.jpg" style="height: 400px;">
+      </div>
+<div class="mySlides">
+        <div class="numbertext">11 / 35</div>
+        <img src="./photos/gal11.jpg" style="height: 400px;">
+      </div>
+<div class="mySlides">
+        <div class="numbertext">12 / 35</div>
+        <img src="./photos/gal12.jpg" style="height: 400px;">
+      </div>
+<div class="mySlides">
+        <div class="numbertext">13 / 35</div>
+        <img src="./photos/gal13.jpg" style="height: 400px;">
+      </div>
+<div class="mySlides">
+        <div class="numbertext">14 / 35</div>
+        <img src="./photos/gal14.jpg" style="height: 400px;">
+      </div>
+<div class="mySlides">
+        <div class="numbertext">15 / 35</div>
+        <img src="./photos/gal15.jpg" style="height: 400px;">
+      </div>
+<div class="mySlides">
+        <div class="numbertext">16 / 35</div>
+        <img src="./photos/gal16.jpg" style="height: 400px;">
+      </div>
+<div class="mySlides">
+        <div class="numbertext">17 / 35</div>
+        <img src="./photos/gal17.jpg" style="height: 400px;">
+      </div>
+<div class="mySlides">
+        <div class="numbertext">18 / 35</div>
+        <img src="./photos/gal18.jpg" style="height: 400px;">
+      </div>
+<div class="mySlides">
+        <div class="numbertext">19 / 35</div>
+        <img src="./photos/gal19.jpg" style="height: 400px;">
+      </div>
+<div class="mySlides">
+        <div class="numbertext">20 / 35</div>
+        <img src="./photos/gal20.jpg" style="height: 400px;">
+      </div>
+<div class="mySlides">
+        <div class="numbertext">21 / 35</div>
+        <img src="./photos/gal21.jpg" style="height: 400px;">
+      </div>
+<div class="mySlides">
+        <div class="numbertext">22 / 35</div>
+        <img src="./photos/gal22.jpg" style="height: 400px;">
+      </div>
+<div class="mySlides">
+        <div class="numbertext">23 / 35</div>
+        <img src="./photos/gal23.jpg" style="height: 400px;">
+      </div>
+<div class="mySlides">
+        <div class="numbertext">24 / 35</div>
+        <img src="./photos/gal24.jpg" style="height: 400px;">
+      </div>
+<div class="mySlides">
+        <div class="numbertext">25 / 35</div>
+        <img src="./photos/gal25.jpg" style="height: 400px;">
+      </div>
+<div class="mySlides">
+        <div class="numbertext">26 / 35</div>
+        <img src="./photos/gal26.jpg" style="height: 400px;">
+      </div>
+<div class="mySlides">
+        <div class="numbertext">27 / 35</div>
+        <img src="./photos/gal27.jpg" style="height: 400px;">
+      </div>
+<div class="mySlides">
+        <div class="numbertext">28 / 35</div>
+        <img src="./photos/gal28.jpg" style="height: 400px;">
+      </div>
+<div class="mySlides">
+        <div class="numbertext">29 / 35</div>
+        <img src="./photos/gal29.jpg" style="height: 400px;">
+      </div>
+
+
+
 
       <a class="prev" onclick="plusSlides(-1)">❮</a>
       <a class="next" onclick="plusSlides(1)">❯</a>
 
       <div class="caption-container">
-        <p id="caption"></p>
+        <p id="caption" style="color: white;">
+          To view the entire engagement photo gallery and Hubble Photography's full professional portfolio visit: <a href="https://hubble.myportfolio.com/engagement"> https://hubble.myportfolio.com/engagement</a>
+        </p>
       </div>
 
       <div class="row">
@@ -175,12 +296,88 @@ img {
         <div class="column">
           <img class="demo cursor" src="./photos/hike.jpg" style="width:100%" onclick="currentSlide(4)" alt="">
         </div>
+
         <div class="column">
           <img class="demo cursor" src="./photos/hike2.jpg" style="width:100%" onclick="currentSlide(5)" alt="">
         </div>
         <div class="column">
-          <img class="demo cursor" src="./photos/merica.jpg" style="width:100%" onclick="currentSlide(6)" alt="">
+          <img class="demo cursor" src="./photos/gal6.jpg" style="width:100%" onclick="currentSlide(6)" alt="">
         </div>
+        <div class="column">
+          <img class="demo cursor" src="./photos/gal7.JPG" style="width:100%" onclick="currentSlide(7)" alt="">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="./photos/gal8.JPG" style="width:100%" onclick="currentSlide(8)" alt="">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="./photos/gal9.JPG" style="width:100%" onclick="currentSlide(9)" alt="">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="./photos/gal10.jpg" style="width:100%" onclick="currentSlide(10)" alt="">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="./photos/gal11.jpg" style="width:100%" onclick="currentSlide(11)" alt="">
+        </div>
+         <div class="column">
+          <img class="demo cursor" src="./photos/gal12.jpg" style="width:100%" onclick="currentSlide(12)" alt="">
+        </div>
+         <div class="column">
+          <img class="demo cursor" src="./photos/gal13.jpg" style="width:100%" onclick="currentSlide(13)" alt="">
+        </div>
+         <div class="column">
+          <img class="demo cursor" src="./photos/gal14.jpg" style="width:100%" onclick="currentSlide(14)" alt="">
+        </div>
+         <div class="column">
+          <img class="demo cursor" src="./photos/gal15.jpg" style="width:100%" onclick="currentSlide(15)" alt="">
+        </div>
+         <div class="column">
+          <img class="demo cursor" src="./photos/gal16.jpg" style="width:100%" onclick="currentSlide(16)" alt="">
+        </div>
+         <div class="column">
+          <img class="demo cursor" src="./photos/gal17.jpg" style="width:100%" onclick="currentSlide(17)" alt="">
+        </div>
+         <div class="column">
+          <img class="demo cursor" src="./photos/gal18.jpg" style="width:100%" onclick="currentSlide(18)" alt="">
+        </div>
+         <div class="column">
+          <img class="demo cursor" src="./photos/gal19.jpg" style="width:100%" onclick="currentSlide(19)" alt="">
+        </div>
+         <div class="column">
+          <img class="demo cursor" src="./photos/gal20.jpg" style="width:100%" onclick="currentSlide(20)" alt="">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="./photos/gal21.jpg" style="width:100%" onclick="currentSlide(21)" alt="">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="./photos/gal22.jpg" style="width:100%" onclick="currentSlide(22)" alt="">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="./photos/gal23.jpg" style="width:100%" onclick="currentSlide(23)" alt="">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="./photos/gal24.jpg" style="width:100%" onclick="currentSlide(24)" alt="">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="./photos/gal25.jpg" style="width:100%" onclick="currentSlide(25)" alt="">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="./photos/gal26.jpg" style="width:100%" onclick="currentSlide(26)" alt="">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="./photos/gal27.jpg" style="width:100%" onclick="currentSlide(27)" alt="">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="./photos/gal28.jpg" style="width:100%" onclick="currentSlide(28)" alt="">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="./photos/gal29.jpg" style="width:100%" onclick="currentSlide(29)" alt="">
+        </div>
+
+
+
+
+
+
       </div>
     </div>
 
